@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cortez Portfolio</title>
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/github.png') }}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">CORTEZ</div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#education-section" id="education">Education</a></li>
+                <li><a href="#certificates-section" id="certificates">Certificates</a></li>
+                <li><a href="#skills-section" id="skills">Skills</a></li>
+                <li><a href="#projects-section" id="projects">Projects</a></li>
+                <li><a href="#photos-section" id="photos">Photos</a></li>
+            </ul>
+        </div>
+
+        <div class="intro-container ani">
+            <div class="intro">
+                <h1>Hello, I'm</h1>
+                <h2>MARK LAWRENCE V. CORTEZ</h2>
+                <p class="description">
+                    I’m a third-year Bachelor of Science in Information Technology (BSIT) student at Ilocos Sur Polytechnic State College (ISPSC) – Tagudin Campus. I’m passionate about automation, computer vision, machine learning, and innovative technologies that solve real-world problems.
+                </p>
+                <p class="motto">
+                    <span id="typing"></span>
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/lolenseu248/" target="_blank" rel="noopener noreferrer">
+                        <img src="{{ asset('assets/img/facebook.png') }}" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/lolenseu248/" target="_blank" rel="noopener noreferrer">
+                        <img src="{{ asset('assets/img/instagram.png') }}" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/mark-lawrence-cortez/" target="_blank" rel="noopener noreferrer">
+                        <img src="{{ asset('assets/img/linkedin.png') }}" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/lolenseu" target="_blank" rel="noopener noreferrer">
+                        <img src="{{ asset('assets/img/github.png') }}" alt="GitHub">
+                    </a>
+                </div>  
+            </div>
+
+            <img src="{{ asset('assets/img/user1.jpg') }}" alt="Profile Image" class="profile-image">
+        </div>
+    </div>
+
+    <div class="education-section" id="education-section">
+        <div class="ani">
+            <h2>📚 Education</h2>
+            <div class="timeline-item">
+                <div class="timeline-date">2022 - Present</div>
+                <div class="timeline-content clickable" data-link="https://www.facebook.com/ssctagudin">
+                    <h3>College - ISPSC Tagudin Campus</h3>
+                    <p>Currently pursuing a degree in Bachelor of Science in Information Technology.</p>
+                </div>
+            </div>
+        
+            <div class="timeline-item">
+                <div class="timeline-date">2020 - 2022</div>
+                <div class="timeline-content clickable" data-link="https://www.facebook.com/TagudinNHS.SHS">
+                    <h3>Senior High School - Tagudin National High School</h3>
+                    <p>Completed Senior High School, with a focus on EIM (Electrical Installation and Maintenance).</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2016 - 2020</div>
+                <div class="timeline-content clickable" data-link="https://www.facebook.com/PRPMA.1947">
+                    <h3>High School - Pascual Rivera Pimentel Memorial Academy</h3>
+                    <p>Completed High School | Secondary School.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2009 - 2016</div>
+                <div class="timeline-content clickable" data-link="https://www.facebook.com/profile.php?id=100063941149156">
+                    <h3>Elementary - Nagtenga Elementary School</h3>
+                    <p>Completed Primary School.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="certificates-section" id="certificates-section">
+        <div class="ani">
+            <h2>📜 Certificates</h2>
+            <div class="certificate-grid">
+                <div class="certificate-item">
+                    <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-1ec53590-5266-455e-a9f5-d2ec0ff9df45.jpg" alt="Certificate 1">
+                </div>
+                <div class="certificate-item">
+                    <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-ac49bd04-949a-4ad2-a03e-d1b19ed7164a.jpg" alt="Certificate 2">
+                </div>
+                <div class="certificate-item">
+                    <img src="{{ asset('assets/img/certificate3.jpg') }}" alt="Certificate 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="certificate-popover-overlay" id="certificate-popover" style="display:none;">
+        <div class="certificate-popover-content">
+            <img id="certificate-popover-img" src="" alt="Certificate" />
+            <button class="certificate-popover-prev" id="certificate-popover-prev">&lt;</button>
+            <button class="certificate-popover-next" id="certificate-popover-next">&gt;</button>
+            <span class="certificate-popover-close" id="certificate-popover-close">X</span>
+        </div>
+    </div>
+
+    <div class="skills-section" id="skills-section">
+        <div class="ani">
+            <h2>💻 Technical Skills</h2>
+            <div class="skills-icons">
+                <div>
+                    <img src="https://skillicons.dev/icons?i=linux,ubuntu,kali,debian,raspberrypi" alt="Operating Systems" />
+                </div>
+                <div>
+                    <img src="https://skillicons.dev/icons?i=vscode,arduino,github,git,githubactions,docker" alt="Tools & IDEs" />
+                </div>
+                <div>
+                    <img src="https://skillicons.dev/icons?i=python,cpp,bash,html,css,javascript" alt="Programming Languages" />
+                </div>
+                <div>
+                    <img src="https://skillicons.dev/icons?i=flask,opencv,tensorflow,pytorch,django" alt="Frameworks & Libraries" />
+                </div>
+            </div>
+            <div class="skills-lists">
+                <div class="skill-category">
+                    <h3>🖥️ Operating Systems</h3>
+                    <ul>
+                        <li>Linux</li>
+                        <li>Ubuntu</li>
+                        <li>Kali Linux</li>
+                        <li>Debian</li>
+                        <li>Raspberry Pi OS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>🛠️ Tools & IDEs</h3>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>Arduino IDE</li>
+                        <li>Git & GitHub</li>
+                        <li>GitHub Actions</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>💡 Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Bash</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>⚙️ Frameworks & Libraries</h3>
+                    <ul>
+                        <li>Flask</li>
+                        <li>OpenCV</li>
+                        <li>TensorFlow</li>
+                        <li>PyTorch</li>
+                        <li>Django</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-section" id="projects-section">
+        <div class="ani">
+            <h2>🚀 Projects</h2>
+            <div class="project-grid">
+                <div class="project-card" data-link="https://github.com/lolenseu/lolenseu">
+                    <h3>Github Profile</h3>
+                    <p>My personal GitHub profile showcasing various projects and contributions.</p>
+                </div>
+                <div class="project-card" data-link="https://github.com/lolenseu/lolenseu.github.io/tree/main/portfolio">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="project-card" data-link="https://github.com/lolenseu/projects">
+                    <h3>Projects Repository</h3>
+                    <p>A collection of my personal and academic projects showcasing various skills and technologies.</p>
+                </div>
+                <div class="project-card" data-link="https://github.com/lolenseu/pair-pipeline">
+                    <h3>Pair Pipeline</h3>
+                    <p>Pair-Pipeline is a Flask-based API designed for managing pipelines and securely storing key-value data for IoT devices.</p>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-card" data-link="https://github.com/lolenseu/drone-controller">
+                    <h3>ESP32 Drone Telemetry</h3>
+                    <p>Real-time data transmission for drones using ESP-NOW and MAVLink.</p>
+                </div>
+                <div class="project-card" data-link="https://github.com/lolenseu/xcramble">
+                    <h3>Xcramble</h3>
+                    <p>A Simple CLI tool for scrambling and unscrambling text using algorithms with applied machine learning.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="photos-section" id="photos-section">
+        <div class="ani">
+            <h2>📸 Photos</h2>
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="{{ asset('assets/img/photo1.jpg') }}" alt="Photo 1">
+                </div>
+                <div class="photo-item">
+                    <img src="{{ asset('assets/img/photo2.jpg') }}" alt="Photo 2">
+                </div>
+                <div class="photo-item">
+                    <img src="{{ asset('assets/img/photo3.jpg') }}" alt="Photo 3">
+                </div>
+                <div class="photo-item">
+                    <img src="{{ asset('assets/img/photo4.png') }}" alt="Photo 4">
+                </div>
+                <div class="photo-item">
+                    <img src="{{ asset('assets/img/photo5.jpg') }}" alt="Photo 5">
+                </div>
+                <div class="photo-item">
+                    <img src="{{ asset('assets/img/photo6.jpg') }}" alt="Photo 6">
+                </div>
+                <div class="photo-item">
+                    <img src="{{ asset('assets/img/photo7.jpg') }}" alt="Photo 7">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="photos-popover-overlay" id="photos-popover" style="display:none;">
+        <div class="photos-popover-content">
+            <img id="photos-popover-img" src="" alt="Photo" />
+            <button class="photos-popover-prev" id="photos-popover-prev">&lt;</button>
+            <button class="photos-popover-next" id="photos-popover-next">&gt;</button>
+            <span class="photos-popover-close" id="photos-popover-close">X</span>
+        </div>
+    </div>
+
+    <footer class="contact-section" id="contact-section">
+        <h2>Contact Me</h2>
+        <p>Email: lolenseu.koleutejeu248@gmail.com</p>
+        <p>Phone: +639673280015</p>
+        <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top-btn">&#8679; Top</button>
+
+    <script src="{{ asset('assets/js/script.js') }}"></script>
+</body>
+</html>
