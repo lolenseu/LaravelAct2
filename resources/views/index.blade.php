@@ -42,7 +42,7 @@
 </head>
 <body>
   <main class="card" role="main">
-    <div class="emoji" aria-hidden="true">🧠❌</div>
+    <div class="emoji" aria-hidden="true">🧠</div>
     <h1>404 — Brain Not Found</h1>
     <p class="lead">Looks like somebody left their brain at home. Nothing to see here —<br> but you can check out these portfolio links:</p>
 
