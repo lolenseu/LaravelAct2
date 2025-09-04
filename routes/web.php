@@ -13,3 +13,8 @@ Route::get('/', function () {
 Route::get('/cortez', function () {
     return view('cortez');
 });
+
+Route::get('/almoite', function () {
+    return view('almoite');
+});
+

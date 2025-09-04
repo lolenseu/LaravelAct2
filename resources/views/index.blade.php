@@ -48,7 +48,7 @@
 
     <div class="links">
       <a class="btn" href="{{ url('/cortez') }}" target="_self"><span class="dot"></span>Cortez</a>
-      <a class="btn" href="https://github.com/profile2" target="_self"><span class="dot"></span>Almoite</a>
+      <a class="btn" href="{{ url('/almoite') }}" target="_self"><span class="dot"></span>Almoite</a>
       <a class="btn" href="https://github.com/profile3" target="_self"><span class="dot"></span>Madrid</a>
       <a class="btn" href="https://github.com/profile4" target="_self"><span class="dot"></span>Acosta</a>
     </div>
