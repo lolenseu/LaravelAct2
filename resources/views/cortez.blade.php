@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cortez Portfolio</title>
-    <link rel="icon" type="image/png" href="{{ asset('assets/img/github.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('asset1/img/github.png') }}">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet">
+    <link href="{{ asset('asset1/css/styles.css') }}" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -18,7 +18,8 @@
                 <span></span>
             </div>
             <ul class="nav-links">
-                <li><a href="#" id="home">Home</a></li>
+                <li><a href="{{ route('home') }}">Home</a></li>
+                <li><a href="#" id="home">Introduction</a></li>
                 <li><a href="#education-section" id="education">Education</a></li>
                 <li><a href="#certificates-section" id="certificates">Certificates</a></li>
                 <li><a href="#skills-section" id="skills">Skills</a></li>
@@ -39,21 +40,21 @@
                 </p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/lolenseu248/" target="_blank" rel="noopener noreferrer">
-                        <img src="{{ asset('assets/img/facebook.png') }}" alt="Facebook">
+                        <img src="{{ asset('asset1/img/facebook.png') }}" alt="Facebook">
                     </a>
                     <a href="https://www.instagram.com/lolenseu248/" target="_blank" rel="noopener noreferrer">
-                        <img src="{{ asset('assets/img/instagram.png') }}" alt="Instagram">
+                        <img src="{{ asset('asset1/img/instagram.png') }}" alt="Instagram">
                     </a>
                     <a href="https://www.linkedin.com/in/mark-lawrence-cortez/" target="_blank" rel="noopener noreferrer">
-                        <img src="{{ asset('assets/img/linkedin.png') }}" alt="LinkedIn">
+                        <img src="{{ asset('asset1/img/linkedin.png') }}" alt="LinkedIn">
                     </a>
                     <a href="https://github.com/lolenseu" target="_blank" rel="noopener noreferrer">
-                        <img src="{{ asset('assets/img/github.png') }}" alt="GitHub">
+                        <img src="{{ asset('asset1/img/github.png') }}" alt="GitHub">
                     </a>
                 </div>  
             </div>
 
-            <img src="{{ asset('assets/img/user1.jpg') }}" alt="Profile Image" class="profile-image">
+            <img src="{{ asset('asset1/img/user1.jpg') }}" alt="Profile Image" class="profile-image">
         </div>
     </div>
 
@@ -105,7 +106,7 @@
                     <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-ac49bd04-949a-4ad2-a03e-d1b19ed7164a.jpg" alt="Certificate 2">
                 </div>
                 <div class="certificate-item">
-                    <img src="{{ asset('assets/img/certificate3.jpg') }}" alt="Certificate 3">
+                    <img src="{{ asset('asset1/img/certificate3.jpg') }}" alt="Certificate 3">
                 </div>
             </div>
         </div>
@@ -222,25 +223,25 @@
             <h2>📸 Photos</h2>
             <div class="photo-grid">
                 <div class="photo-item">
-                    <img src="{{ asset('assets/img/photo1.jpg') }}" alt="Photo 1">
+                    <img src="{{ asset('asset1/img/photo1.jpg') }}" alt="Photo 1">
                 </div>
                 <div class="photo-item">
-                    <img src="{{ asset('assets/img/photo2.jpg') }}" alt="Photo 2">
+                    <img src="{{ asset('asset1/img/photo2.jpg') }}" alt="Photo 2">
                 </div>
                 <div class="photo-item">
-                    <img src="{{ asset('assets/img/photo3.jpg') }}" alt="Photo 3">
+                    <img src="{{ asset('asset1/img/photo3.jpg') }}" alt="Photo 3">
                 </div>
                 <div class="photo-item">
-                    <img src="{{ asset('assets/img/photo4.png') }}" alt="Photo 4">
+                    <img src="{{ asset('asset1/img/photo4.png') }}" alt="Photo 4">
                 </div>
                 <div class="photo-item">
-                    <img src="{{ asset('assets/img/photo5.jpg') }}" alt="Photo 5">
+                    <img src="{{ asset('asset1/img/photo5.jpg') }}" alt="Photo 5">
                 </div>
                 <div class="photo-item">
-                    <img src="{{ asset('assets/img/photo6.jpg') }}" alt="Photo 6">
+                    <img src="{{ asset('asset1/img/photo6.jpg') }}" alt="Photo 6">
                 </div>
                 <div class="photo-item">
-                    <img src="{{ asset('assets/img/photo7.jpg') }}" alt="Photo 7">
+                    <img src="{{ asset('asset1/img/photo7.jpg') }}" alt="Photo 7">
                 </div>
             </div>
         </div>
@@ -264,6 +265,6 @@
 
     <button id="back-to-top" class="back-to-top-btn">&#8679; Top</button>
 
-    <script src="{{ asset('assets/js/script.js') }}"></script>
+    <script src="{{ asset('asset1/js/script.js') }}"></script>
 </body>
 </html>
