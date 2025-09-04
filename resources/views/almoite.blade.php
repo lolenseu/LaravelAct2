@@ -68,7 +68,7 @@
                 </ul>
             </div>
 
-            <li><a href="{{ route('home') }}">Home</a></li>
+            <a href="{{ route('home') }}" class="nav__logo">Home</a>
             <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
 
         </nav>
