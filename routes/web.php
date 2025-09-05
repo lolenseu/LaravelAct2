@@ -18,10 +18,10 @@ Route::get('/almoite', function () {
     return view('almoite');
 });
 
-// Madrid add mo dito yung route mo
-
+Route::get('/madrid', function () {
+    return view('madrid');
+});
 
 Route::get('/acosta', function () {
     return view('acosta');
 });
-
