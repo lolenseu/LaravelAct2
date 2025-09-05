@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mark Acosta | Portfolio</title>
-  <link href="{{ asset('asset4/styles.css') }}" rel="stylesheet">
+  <link href="{{ asset('asset4/style.css') }}" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
@@ -42,7 +42,7 @@
       </div>
     </div>
     <div class="hero-image">
-      <img href="{{ asset('asset4/pitureko.jpg') }}" alt="Profile photo of Mark Acosta">
+      <img src="{{ asset('asset4/pitureko.jpg') }}" alt="Profile photo of Mark Acosta">
     </div>
   </main>
 </body>
