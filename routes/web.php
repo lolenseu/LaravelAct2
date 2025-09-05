@@ -22,3 +22,6 @@ Route::get('/madrid', function () {
     return view('madrid');
 });
 
+Route::get('/acosta', function () {
+    return view('acosta');
+});
